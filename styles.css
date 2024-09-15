@@ -11,6 +11,13 @@ body {
     color: #ffffff; /* Texto principal blanco */
 }
 
+/* Estilo del título */
+h2 {
+    color: #4a90e2; /* Azul claro para el título */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
 /* Contenedor del test */
 .test-container {
     background-color: #fff;
