@@ -1,13 +1,14 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff; /* Azul pastel de fondo */
+    background-color: #001f3f; /* Azul oscuro de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 20px; /* Añadido padding para dispositivos móviles */
+    padding: 20px;
+    color: #ffffff; /* Texto principal blanco */
 }
 
 /* Contenedor del test */
@@ -15,18 +16,18 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     width: 100%;
     margin: 20px;
     text-align: center;
-    border: 2px solid #d9eaf7; /* Suave borde azul */
-    transition: all 0.3s ease;
+    border: 2px solid #d9eaf7;
+    color: #333; /* Texto del contenedor en color oscuro */
 }
 
 /* Estilo del título */
 h2 {
-    color: #333;
+    color: #ffffff; /* Texto del título en blanco */
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -43,7 +44,7 @@ h2 {
 
 label {
     font-size: 16px;
-    color: #555;
+    color: #555; /* Texto de las preguntas en gris */
 }
 
 /* Estilo para las opciones (radios) */
@@ -57,7 +58,7 @@ input[type="radio"]:hover {
 
 /* Estilo del botón de envío */
 button {
-    background-color: #b6e0f2; /* Azul pastel para el botón */
+    background-color: #1d4e89; /* Azul más claro para el botón */
     color: #fff;
     padding: 15px 20px;
     border: none;
@@ -70,7 +71,7 @@ button {
 }
 
 button:hover {
-    background-color: #7ac6e3; /* Oscurece el color azul al pasar el mouse */
+    background-color: #4a90e2; /* Botón azul más claro al hacer hover */
 }
 
 /* Resultado del test */
@@ -86,25 +87,41 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Aviso importante */
+.warning {
+    background-color: #fff8e1; /* Fondo amarillo claro */
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ffd54f;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #8c6d1f; /* Texto marrón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.warning strong {
+    color: #d32f2f; /* Color rojo para el aviso importante */
+}
+
 /* Adaptación a pantallas pequeñas */
 @media (max-width: 768px) {
     .test-container {
         padding: 20px;
         font-size: 16px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra más ligera en móviles */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
-        font-size: 20px; /* Tamaño de título más pequeño en móviles */
+        font-size: 20px;
     }
 
     .question {
-        padding: 15px; /* Reducir el padding en móviles */
+        padding: 15px;
     }
 
     button {
         padding: 10px 15px;
-        font-size: 14px; /* Tamaño del botón más pequeño en móviles */
+        font-size: 14px;
     }
 }
 
@@ -112,20 +129,21 @@ button:hover {
 @media (max-width: 480px) {
     .test-container {
         width: 100%;
-        padding: 15px; /* Aumentar espacio interno en dispositivos pequeños */
+        padding: 15px;
     }
 
     .question {
         padding: 10px;
-        font-size: 14px; /* Reducir el tamaño de texto en móviles pequeños */
+        font-size: 14px;
     }
 
     button {
         font-size: 12px;
-        padding: 10px; /* Botón más compacto */
+        padding: 10px;
     }
 
     h2 {
-        font-size: 18px; /* Tamaño de título reducido para pantallas pequeñas */
+        font-size: 18px;
     }
 }
+
