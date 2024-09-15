@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul pastel de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Añadido padding para dispositivos móviles */
+}
+
+/* Contenedor del test */
+.test-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #d9eaf7; /* Suave borde azul */
+    transition: all 0.3s ease;
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilos para las preguntas */
+.question {
+    background-color: #f9f2f2; /* Color de fondo rosado claro */
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilo para las opciones (radios) */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+/* Estilo del botón de envío */
+button {
+    background-color: #b6e0f2; /* Azul pastel para el botón */
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #7ac6e3; /* Oscurece el color azul al pasar el mouse */
+}
+
+/* Resultado del test */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #e5f8d9; /* Fondo verde pastel para el resultado */
+    border: 2px solid #cdeac2; /* Borde verde claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .test-container {
+        padding: 20px;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra más ligera en móviles */
+    }
+
+    h2 {
+        font-size: 20px; /* Tamaño de título más pequeño en móviles */
+    }
+
+    .question {
+        padding: 15px; /* Reducir el padding en móviles */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px; /* Tamaño del botón más pequeño en móviles */
+    }
+}
+
+/* Adaptación a pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .test-container {
+        width: 100%;
+        padding: 15px; /* Aumentar espacio interno en dispositivos pequeños */
+    }
+
+    .question {
+        padding: 10px;
+        font-size: 14px; /* Reducir el tamaño de texto en móviles pequeños */
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px; /* Botón más compacto */
+    }
+
+    h2 {
+        font-size: 18px; /* Tamaño de título reducido para pantallas pequeñas */
+    }
+}
