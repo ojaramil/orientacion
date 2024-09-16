@@ -16,7 +16,21 @@
         </div>
 
        <p>Por Simon Baron-Cohen y Sally Wheelwright</p> 
-<p>Para más información, consulta el <a href="https://link.springer.com/article/10.1023/A:1025879411971" target="_blank" rel="noopener noreferrer">artículo original de Simon Baron-Cohen y Sally Wheelwright</a>.</p>
+<p>Para más información, consulta el <a href="https://link.springer.com/article/10.1023/A:1025879411971" target="_blank" rel="noopener noreferrer" onclick="openInNewTab(event, this.href)">artículo original de Simon Baron-Cohen y Sally Wheelwright</a>.</p>
+
+<script>
+    function openInNewTab(event, url) {
+        event.preventDefault(); // Prevent the default link behavior
+
+        // Check if the window object is part of an app's webview (such as Appily)
+        if (window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches) {
+            window.open(url, '_system'); // Force opening in the system's default browser
+        } else {
+            window.open(url, '_blank'); // Open in a new tab or window
+        }
+    }
+</script>
+
 
         <form id="friendshipQuestionnaire">
             <!-- Question 1 -->
