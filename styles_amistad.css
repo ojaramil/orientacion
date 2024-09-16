@@ -1,74 +1,98 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Dark text for the entire page */
+    background-color: #1A202C; /* Fondo azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
     margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Full viewport height */
-    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px 0;
 }
 
 .container {
     width: 90%;
-    max-width: 800px; /* Maximum width for the container */
-    background-color: #ffffff; /* White background for the container */
-    border-radius: 10px; /* Rounded corners for the container */
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for a refined look */
-    padding: 20px 30px;
-    max-height: 90vh; /* Ensure the container doesn't exceed 90% of viewport height */
-    overflow-y: auto; /* Scrollable content inside the container */
-    margin: 20px auto; /* Center the container with automatic margins */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    max-width: 800px;
+    background-color: #FFFFFF; /* Caja blanca para las preguntas */
+    color: #2D3748; /* Texto oscuro para mejor legibilidad */
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: auto;
+    overflow-y: auto;
 }
 
 h1 {
     text-align: center;
-    color: #2F855A; /* Dark green for the title */
+    color: #2F855A;
     font-weight: bold;
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #333333; /* Softer dark color for text */
+p, .warning {
+    color: #2D3748;
     line-height: 1.6;
 }
 
 .warning {
-    background-color: #FFEB84; /* Light yellow background */
-    color: #B7791F; /* Dark yellow/brown text */
+    background-color: #F6E05E;
+    color: #744210;
     font-weight: bold;
     padding: 15px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
 }
 
 .question label {
     font-weight: bold;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
-.question select {
+.question select,
+.question input[type="radio"] {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #cccccc;
-    background-color: #f7fafc; /* Light pastel background */
-    color: #000000;
+    border: 1px solid #CBD5E0;
+    background-color: #F7FAFC;
+    color: #2D3748;
     font-size: 16px;
 }
 
-.submit-button button {
+.subquestion {
+    margin-bottom: 10px;
+}
+
+.subquestion label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subquestion select {
     width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #CBD5E0;
+    background-color: #EDF2F7;
+    color: #2D3748;
+    font-size: 14px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button button {
+    width: 50%;
     padding: 12px;
-    background-color: #63B3ED; /* Light blue */
+    background-color: #3182CE;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
@@ -76,7 +100,7 @@ p {
 }
 
 .submit-button button:hover {
-    background-color: #3182CE; /* Darker blue on hover */
+    background-color: #2B6CB0;
 }
 
 .result {
@@ -85,29 +109,31 @@ p {
     font-size: 20px;
     font-weight: bold;
     color: #2C7A7B;
-    background-color: #E6FFFA; /* Pastel teal background */
+    background-color: #E6FFFA;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for emphasis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
-        width: 100%; /* Full width on smaller screens */
-        padding: 15px;
+        width: 95%;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
-    .question select {
+    .question select,
+    .question input[type="radio"] {
         font-size: 14px;
         padding: 8px;
     }
 
     .submit-button button {
+        width: 100%;
         font-size: 16px;
         padding: 10px;
     }
