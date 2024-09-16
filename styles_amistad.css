@@ -9,7 +9,6 @@ body {
     overflow: hidden; /* Prevent page scrolling */
 }
 
-
 .container-wrapper {
     position: fixed; /* Fixed positioning so it doesn't move */
     top: 50%; /* Center vertically */
@@ -26,17 +25,16 @@ body {
     max-height: 90vh; /* Ensure container doesn't exceed 90% of the viewport height */
 }
 
-    
 h1 {
     text-align: center;
-    color: #2F855A; /* Pastel green for the title */
+    color: #2F855A; /* Dark green title color */
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
 p {
-    color: #333333; /* Softer dark color for text */
+    color: #333333; /* Dark text color for paragraphs */
     line-height: 1.6;
 }
 
@@ -64,8 +62,8 @@ select, input[type="radio"] {
     border-radius: 5px;
     border: 1px solid #cccccc;
     background-color: #f7fafc; /* Light pastel gray for inputs */
-    color: #000000;
-    font-size: 16px; /* Larger font for more legible inputs */
+    color: #000000; /* Dark text inside inputs */
+    font-size: 16px; /* Font size for better readability */
 }
 
 .subquestion {
@@ -152,3 +150,4 @@ button:hover {
         font-size: 16px;
     }
 }
+
