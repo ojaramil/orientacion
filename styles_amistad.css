@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #001f3f; /* Dark blue background */
-    color: #000000;
+    color: #000000; /* Dark text for the entire page */
     margin: 0;
     padding: 0;
     height: 100vh; /* Full viewport height */
@@ -10,140 +10,132 @@ body {
 }
 
 .container-wrapper {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 400px; /* Max width for mobile-like design */
-    background-color: #ffffff; /* White background */
-    border-radius: 15px; /* Rounded corners for container */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    padding: 20px;
-    text-align: center;
-    overflow-y: auto; /* Allow internal scrolling if necessary */
-    max-height: 85vh; /* Ensure form doesn't overflow vertically */
-}
+    position: fixed
 
-/* Title Styles */
+
+    
 h1 {
-    font-size: 20px; /* Smaller title */
-    color: #1f2d3d; /* Darker color for title */
-    margin-bottom: 10px;
+    text-align: center;
+    color: #2F855A; /* Pastel green for the title */
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-/* Description Text */
 p {
-    font-size: 14px; /* Smaller font for description text */
-    color: #2d3a4a; /* Softer dark color for readability */
-    line-height: 1.5;
+    color: #333333; /* Softer dark color for text */
+    line-height: 1.6;
 }
 
-/* Warning Box */
 .warning {
-    background-color: #fff8e1; /* Soft yellow background */
-    color: #e65100; /* Orange color for warning text */
-    font-size: 12px; /* Smaller font for warning */
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border-left: 4px solid #ffd54f; /* Left border with yellow tone */
+    background-color: #FFEB84; /* Pastel yellow background for the warning */
+    color: #B7791F; /* Dark yellow/brown text */
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #F6AD55; /* Highlighted left border */
+    border-radius: 8px;
     text-align: left;
 }
 
-/* Form Styles */
 label {
-    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #2d3a4a;
-    display: block;
-    text-align: left;
+    display: inline-block;
 }
 
 select, input[type="radio"] {
-    margin-bottom: 15px;
-    padding: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 1px solid #cccccc;
-    background-color: #f7fafc; /* Light gray for inputs */
-    color: #2d3a4a;
-    font-size: 14px;
+    background-color: #f7fafc; /* Light pastel gray for inputs */
+    color: #000000;
+    font-size: 16px; /* Larger font for more legible inputs */
 }
 
-/* Button Styles */
+.subquestion {
+    margin-bottom: 25px;
+}
+
 button {
     width: 100%;
     padding: 12px;
-    background-color: #1976d2; /* Blue background for button */
+    background-color: #63B3ED; /* Pastel blue button */
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #0d47a1; /* Darker blue on hover */
+    background-color: #3182CE; /* Darker blue for hover */
 }
 
-/* Result Box */
 .result {
-    font-size: 14px;
-    color: #004d40; /* Teal color for result text */
-    background-color: #e0f2f1; /* Light teal background */
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C7A7B; /* Pastel teal for result text */
+    background-color: #E6FFFA; /* Pastel teal background to highlight the result */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the result */
 }
 
-/* Responsive for Tablets and Mobile */
+/* Responsive Styling for Tablets (Medium Devices) */
 @media (max-width: 768px) {
     .container-wrapper {
-        width: 95%; /* Ensure the form takes up more space on tablets */
+        width: 90%; /* Reduce width for tablets */
     }
 
     h1 {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 13px;
+        font-size: 24px; /* Smaller title for tablets */
     }
 
     button {
-        font-size: 13px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-wrapper {
-        width: 100%; /* Full width on smaller screens */
-        padding: 15px;
-    }
-
-    h1 {
         font-size: 16px;
     }
 
-    p {
-        font-size: 12px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 10px;
-    }
-
     select, input[type="radio"] {
-        padding: 6px;
-        font-size: 12px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 18px;
     }
 }
 
+/* Responsive Styling for Mobile (Small Devices) */
+@media (max-width: 480px) {
+    .container-wrapper {
+        width: 100%;
+        height: 90vh; /* Occupy 90% of the screen height */
+        max-height: 90vh; /* Keep height under control */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px; /* Smaller title for mobile devices */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    select, input[type="radio"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
