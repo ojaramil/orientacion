@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Amistad (FQ)</title>
+    <link rel="stylesheet" href="styles_amistad.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cuestionario de Amistad (FQ)</h1>
+
+ <!-- Warning message -->
+        <div class="warning">
+            Advertencia: Este cuestionario no es un diagnóstico oficial. Para obtener más información y un diagnóstico profesional, diríjase a la fuente original y consulte a un experto.
+        </div>
+
+        
+        <p>Por Simon Baron-Cohen y Sally Wheelwright</p> 
+        <p>Para más información, consulta el <a href="https://link.springer.com/article/10.1023/A:1025879411971" target="_blank">artículo original de Simon Baron-Cohen y Sally Wheelwright</a>.</p>
+
+        <form id="friendshipQuestionnaire">
+            <!-- Question 1 -->
+            <div class="question">
+                <label for="q1">1. Escoja la frase con la que más se identifique.</label>
+                <select id="q1" name="q1">
+                    <option value="1">Tengo uno o dos amigos a los que considero mis mejores amigos.</option>
+                    <option value="2">Tengo varios amigos a los que podría considerar como mis mejores amigos.</option>
+                    <option value="0">No tengo a nadie a quien pueda considerar como mi mejor amigo.</option>
+                </select>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label for="q2">2. Escoja la frase con la que más se identifique.</label>
+                <select id="q2" name="q2">
+                    <option value="1">Lo más importante de una amistad es tener a alguien en quien confiar.</option>
+                    <option value="2">Lo más importante de una amistad es tener a alguien con quien divertirse.</option>
+                </select>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label for="q3">3. Escoja la frase con la que más se identifique.</label>
+                <select id="q3" name="q3">
+                    <option value="1">Si tuviese que escoger, preferiría tener un amigo a quien le gustase hacer las mismas cosas que a mí.</option>
+                    <option value="2">Si tuviese que escoger, preferiría tener un amigo que tuviese el mismo concepto de la vida que yo.</option>
+                </select>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label for="q4">4. Escoja la frase con la que más se identifique.</label>
+                <select id="q4" name="q4">
+                    <option value="1">Me gusta sentirme cercano a la gente.</option>
+                    <option value="2">Me gusta mantener una cierta distancia con la gente.</option>
+                </select>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5. Escoja la frase con la que más se identifique.</label>
+                <select id="q5" name="q5">
+                    <option value="1">Cuando hablo con los amigos por teléfono suele ser más para quedar que para charlar.</option>
+                    <option value="2">Cuando hablo con los amigos por teléfono suele ser más para charlar que para quedar.</option>
+                </select>
+            </div>
+
+
+
+ <!-- Question 5 -->
+            <div class="question">
+                <label for="q5">5. Escoja la frase con la que más se identifique.</label>
+                <select id="q5" name="q5">
+                    <option value="1">Cuando hablo con los amigos por teléfono suele ser más para quedar que para charlar.</option>
+                    <option value="2">Cuando hablo con los amigos por teléfono suele ser más para charlar que para quedar.</option>
+                </select>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <label for="q6">6. Escoja la frase con la que más se identifique.</label>
+                <select id="q6" name="q6">
+                    <option value="1">Suelo pensar primero en una actividad que quiero hacer y después trato de encontrar a alguien con quien hacerla.</option>
+                    <option value="2">Suelo quedar primero con alguien y después pienso en algo que podamos hacer juntos.</option>
+                </select>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <label for="q7">7. Escoja la frase con la que más se identifique.</label>
+                <select id="q7" name="q7">
+                    <option value="1">Prefiero encontrarme con un amigo para hacer una actividad específica, por ejemplo ir al cine o jugar al golf.</option>
+                    <option value="2">Prefiero encontrarme con un amigo para charlar, por ejemplo en un bar o un café.</option>
+                </select>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <label for="q8">8. Escoja la frase con la que más se identifique.</label>
+                <select id="q8" name="q8">
+                    <option value="1">Si me mudase a otra zona, me esforzaría más en seguir en contacto con mis antiguas amistades que en hacer nuevas amistades.</option>
+                    <option value="2">Si me mudase a otra zona, me esforzaría más en hacer nuevas amistades que en seguir en contacto con mis antiguas amistades.</option>
+                </select>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <label for="q9">9. Escoja la frase con la que más se identifique.</label>
+                <select id="q9" name="q9">
+                    <option value="1">Mis amigos me valoran más como alguien en quien pueden apoyarse que como alguien con quien pueden divertirse.</option>
+                    <option value="2">Mis amigos me valoran más como alguien con quien pueden divertirse que como alguien en quien pueden apoyarse.</option>
+                </select>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <label for="q10">10. Escoja la frase con la que más se identifique.</label>
+                <select id="q10" name="q10">
+                    <option value="1">Si un amigo mío tuviese un problema yo le sería más útil como confidente que aportando soluciones prácticas.</option>
+                    <option value="2">Si un amigo mío tuviese un problema yo le sería más útil aportando soluciones prácticas que como confidente.</option>
+                </select>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question">
+                <label for="q11">11. Escoja la frase con la que más se identifique.</label>
+                <select id="q11" name="q11">
+                    <option value="1">Si un amigo mío tuviese problemas personales esperaría a que fuese él quien se pusiera en contacto conmigo, ya que no desearía entrometerme.</option>
+                    <option value="2">Si un amigo mío tuviera problemas personales me pondría en contacto con él para hablar de sus problemas.</option>
+                </select>
+            </div>
+
+
+
+
+ <!-- Question 12 -->
+            <div class="question">
+                <label for="q12">12. Escoja la frase con la que más se identifique.</label>
+                <select id="q12" name="q12">
+                    <option value="1">Cuando tengo un problema personal pienso que es mejor que lo resuelva yo solo.</option>
+                    <option value="2">Cuando tengo un problema personal pienso que es mejor que lo comparta con un amigo.</option>
+                    <option value="0">Cuando tengo un problema personal pienso que es mejor intentar olvidarlo.</option>
+                </select>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <label for="q13">13. Escoja la frase con la que más se identifique.</label>
+                <select id="q13" name="q13">
+                    <option value="1">Si tengo que hacer una crítica a un amigo prefiero abordar el tema con delicadeza.</option>
+                    <option value="2">Si tengo que hacer una crítica a un amigo prefiero decírsela directamente, sin rodeos.</option>
+                </select>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <label for="q14">14. Si me pelease con un buen amigo mío y pensase que no había sido por mi culpa...</label>
+                <select id="q14" name="q14">
+                    <option value="1">...haría lo que fuese para reparar la relación.</option>
+                    <option value="2">...estaría dispuesto a dar el primer paso para reconciliarme, siempre que viera que la intención es recíproca.</option>
+                    <option value="3">...estaría dispuesto a solucionar el problema siempre que él diese el primer paso.</option>
+                    <option value="0">...no podría volver otra vez a tener la misma amistad con él.</option>
+                </select>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <label for="q15">15. Mi espacio de trabajo ideal sería...</label>
+                <select id="q15" name="q15">
+                    <option value="1">...en una oficina para mí solo y sin recibir visitas durante la jornada laboral.</option>
+                    <option value="2">...en una oficina para mí solo, recibiendo visitas ocasionales durante la jornada laboral.</option>
+                    <option value="3">...en una oficina compartida con dos o tres personas más.</option>
+                    <option value="0">...en un espacio abierto, sin separaciones de ningún tipo.</option>
+                </select>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <label for="q16">16. ¿Le resulta fácil hablar de sus sentimientos con sus amistades?</label>
+                <select id="q16" name="q16">
+                    <option value="4">Muy fácil</option>
+                    <option value="3">Bastante fácil</option>
+                    <option value="2">No muy fácil</option>
+                    <option value="1">Bastante difícil</option>
+                    <option value="0">Muy difícil</option>
+                </select>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <label for="q17">17. ¿Le resulta fácil hablar de sus sentimientos con desconocidos?</label>
+                <select id="q17" name="q17">
+                    <option value="4">Muy fácil</option>
+                    <option value="3">Bastante fácil</option>
+                    <option value="2">No muy fácil</option>
+                    <option value="1">Bastante difícil</option>
+                    <option value="0">Muy difícil</option>
+                </select>
+            </div>
+
+
+  <!-- Question 18 -->
+            <div class="question">
+                <label for="q18">18. ¿Cómo reaccionaría si alguien le hiciera una crítica constructiva?</label>
+                <select id="q18" name="q18">
+                    <option value="4">Lo acepto sin problemas y agradezco la crítica.</option>
+                    <option value="3">Me siento un poco incómodo pero entiendo su valor.</option>
+                    <option value="2">Me siento molesto, pero trato de controlarlo.</option>
+                    <option value="1">Me siento bastante molesto y me cuesta mucho aceptar la crítica.</option>
+                    <option value="0">No acepto bien la crítica, me pone muy a la defensiva.</option>
+                </select>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <label for="q19">19. ¿Qué importancia tiene para usted el tener amigos con intereses similares?</label>
+                <select id="q19" name="q19">
+                    <option value="4">Es muy importante, busco amigos que compartan mis intereses.</option>
+                    <option value="3">Es importante, pero no esencial.</option>
+                    <option value="2">No es muy importante, siempre que haya respeto mutuo.</option>
+                    <option value="1">No me importa en absoluto, la variedad es más interesante.</option>
+                    <option value="0">Prefiero evitar hablar de mis intereses con amigos.</option>
+                </select>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <label for="q20">20. ¿Cómo suele iniciar una conversación con alguien nuevo?</label>
+                <select id="q20" name="q20">
+                    <option value="4">Me resulta muy fácil y natural empezar una conversación.</option>
+                    <option value="3">Me siento cómodo, aunque a veces puede ser un poco difícil.</option>
+                    <option value="2">Me siento algo incómodo, pero lo hago si es necesario.</option>
+                    <option value="1">Generalmente me cuesta mucho iniciar una conversación.</option>
+                    <option value="0">Evito iniciar conversaciones con personas desconocidas.</option>
+                </select>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="question">
+                <label for="q21">21. ¿Cómo se sentiría si un amigo cercano se mudara a otra ciudad?</label>
+                <select id="q21" name="q21">
+                    <option value="4">Me sentiría triste, pero haría un esfuerzo por mantener el contacto.</option>
+                    <option value="3">Me sentiría triste, pero probablemente no intentaría mantener tanto contacto.</option>
+                    <option value="2">Lo aceptaría sin problema, las amistades cambian con el tiempo.</option>
+                    <option value="1">Lo aceptaría fácilmente, no suelo aferrarme a las amistades.</option>
+                </select>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question">
+                <label for="q22">22. ¿Qué tan seguido busca a sus amigos para hablar de sus problemas personales?</label>
+                <select id="q22" name="q22">
+                    <option value="4">Siempre busco a mis amigos cuando tengo problemas personales.</option>
+                    <option value="3">A menudo recurro a mis amigos cuando tengo problemas.</option>
+                    <option value="2">Solo hablo con mis amigos de problemas personales si son muy graves.</option>
+                    <option value="1">Rara vez hablo de mis problemas personales con amigos.</option>
+                    <option value="0">Nunca hablo de mis problemas personales con amigos.</option>
+                </select>
+            </div>
+            
+
+
+ <!-- Question 23 -->
+            <div class="question">
+                <label for="q23">23. ¿Le resulta fácil mostrar a sus amistades sus debilidades y fracasos?</label>
+                <select id="q23" name="q23">
+                    <option value="4">Muy fácil</option>
+                    <option value="3">Bastante fácil</option>
+                    <option value="2">No muy fácil</option>
+                    <option value="1">Bastante difícil</option>
+                    <option value="0">Muy difícil</option>
+                </select>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question">
+                <label for="q24">24. ¿Le resulta fácil mostrar a sus amistades sus logros y sus éxitos?</label>
+                <select id="q24" name="q24">
+                    <option value="4">Muy fácil</option>
+                    <option value="3">Bastante fácil</option>
+                    <option value="2">No muy fácil</option>
+                    <option value="1">Bastante difícil</option>
+                    <option value="0">Muy difícil</option>
+                </select>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question">
+                <label for="q25">25. ¿Está interesado en los detalles del día a día de sus amistades más cercanas? Por ejemplo, sus relaciones, su familia, cómo les va la vida, etc.</label>
+                <select id="q25" name="q25">
+                    <option value="0">Completamente desinteresado</option>
+                    <option value="1">No muy interesado</option>
+                    <option value="2">Bastante interesado</option>
+                    <option value="3">Muy interesado</option>
+                </select>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question">
+                <label for="q26">26. ¿Está interesado en los detalles del día a día de sus amistades ocasionales? Por ejemplo, sus relaciones, su familia, cómo les va la vida, etc.</label>
+                <select id="q26" name="q26">
+                    <option value="0">Completamente desinteresado</option>
+                    <option value="1">No muy interesado</option>
+                    <option value="2">Bastante interesado</option>
+                    <option value="3">Muy interesado</option>
+                </select>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question">
+                <label for="q27">27. Cuando está en un grupo, por ejemplo en el trabajo, en la iglesia o en un grupo de padres y madres, ¿Cuán importante es para usted saber los chismes o habladurías? Por ejemplo, a quién le gusta quién, quién tiene una relación con quién, secretos, etc.</label>
+                <select id="q27" name="q27">
+                    <option value="0">De ninguna importancia</option>
+                    <option value="1">De poca importancia</option>
+                    <option value="2">De bastante importancia</option>
+                    <option value="3">De mucha importancia</option>
+                    <option value="4">De gran importancia</option>
+                </select>
+            </div>
+
+
+
+  <!-- Question 28 -->
+            <div class="question">
+                <label for="q28">28. ¿Dedica más tiempo a su carrera que a mantener las relaciones con sus amistades?</label>
+                <select id="q28" name="q28">
+                    <option value="1">Sí</option>
+                    <option value="2">No</option>
+                    <option value="0">Igual</option>
+                </select>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question">
+                <label for="q29">29. ¿Cada cuándo planea encuentros con sus amistades?</label>
+                <select id="q29" name="q29">
+                    <option value="1">Una o dos veces al año</option>
+                    <option value="2">Una vez cada dos o tres meses</option>
+                    <option value="3">Una vez al mes</option>
+                    <option value="4">Una vez cada dos semanas</option>
+                    <option value="5">Una o dos veces por semana</option>
+                    <option value="6">Tres o cuatro veces por semana</option>
+                    <option value="0">Más frecuentemente de lo arriba indicado</option>
+                </select>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question">
+                <label for="q30">30. ¿Cuál sería su forma preferida de seguir en contacto con sus amistades? (Seleccione 1, 2, y 3 según la preferencia)</label>
+                <div class="subquestion">
+                    <label>Contacto personal</label>
+                    <input type="radio" name="contacto_personal" value="1"> 1 
+                    <input type="radio" name="contacto_personal" value="2"> 2 
+                    <input type="radio" name="contacto_personal" value="3"> 3 
+                </div>
+                <div class="subquestion">
+                    <label>E-mail/carta</label>
+                    <input type="radio" name="email_carta" value="1"> 1 
+                    <input type="radio" name="email_carta" value="2"> 2 
+                    <input type="radio" name="email_carta" value="3"> 3 
+                </div>
+                <div class="subquestion">
+                    <label>Llamadas telefónicas</label>
+                    <input type="radio" name="llamadas" value="1"> 1 
+                    <input type="radio" name="llamadas" value="2"> 2 
+                    <input type="radio" name="llamadas" value="3"> 3 
+                </div>
+            </div>
+
+            <!-- Question 31 -->
+            <div class="question">
+                <label for="q31">31. ¿Le resulta fácil hacer nuevas amistades?</label>
+                <select id="q31" name="q31">
+                    <option value="4">Muy fácil</option>
+                    <option value="3">Bastante fácil</option>
+                    <option value="2">No muy fácil</option>
+                    <option value="1">Bastante difícil</option>
+                    <option value="0">Muy difícil</option>
+                </select>
+            </div>
+
+
+
+<!-- Question 32 -->
+            <div class="question">
+                <label for="q32">32. ¿Cuál sería el contacto social mínimo que necesitaría para pasar un día?</label>
+                <select id="q32" name="q32">
+                    <option value="0">Ningún contacto, no me siento solo.</option>
+                    <option value="1">Simplemente estando cerca de la gente, aunque no hablase con nadie.</option>
+                    <option value="2">Conversaciones ocasionales, por ejemplo con el tendero o el peluquero.</option>
+                    <option value="3">Una charla diaria con un amigo.</option>
+                    <option value="4">Dos o tres charlas con amigos durante el día.</option>
+                    <option value="5">Más contactos que en las opciones anteriores.</option>
+                </select>
+            </div>
+
+            <!-- Question 33 -->
+            <div class="question">
+                <label for="q33">33. ¿Cuál sería el contacto social mínimo que necesitaría para pasar una semana?</label>
+                <select id="q33" name="q33">
+                    <option value="0">Ningún contacto, no me siento solo.</option>
+                    <option value="1">Simplemente estando cerca de la gente, aunque no hablase con nadie.</option>
+                    <option value="2">Conversaciones ocasionales, por ejemplo con el tendero o el peluquero.</option>
+                    <option value="3">Una conversación semanal con un amigo.</option>
+                    <option value="4">Dos o tres charlas a la semana con los amigos.</option>
+                    <option value="5">Cada día de la semana una charla con un amigo.</option>
+                    <option value="6">Cada día de la semana dos o tres charlas con amigos.</option>
+                    <option value="7">Más contactos que en las opciones anteriores.</option>
+                </select>
+            </div>
+
+ <!-- Question 34 -->
+            <div class="question">
+                <label for="q34">34. Cuando habla con sus amistades, qué proporción de tiempo dedica a hablar de los siguientes temas:</label>
+                <p>Por favor, seleccione:<br>
+                    1 en el tema del que hable más<br>
+                    7 en el tema del que hable menos<br>
+                    Utilice cada número solo una vez, sin repeticiones.
+                </p>
+
+                <div class="subquestion">
+                    <label>Política y actualidad:</label>
+                    <select id="q34_1" name="q34_1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Aficiones e intereses (deportes, música, cine, etc.):</label>
+                    <select id="q34_2" name="q34_2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Asuntos personales (decisiones vitales, sentimientos, etc.):</label>
+                    <select id="q34_3" name="q34_3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Trabajo:</label>
+                    <select id="q34_4" name="q34_4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Familia y amigos:</label>
+                    <select id="q34_5" name="q34_5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>El tiempo:</label>
+                    <select id="q34_6" name="q34_6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Lo que ha hecho desde la última vez que hablaron:</label>
+                    <select id="q34_7" name="q34_7">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Question 35 -->
+            <div class="question">
+                <label for="q35">35. En las situaciones sociales, cuando se encuentra con alguien por primera vez, a cuáles de los siguientes temas recurre para mantener una conversación:</label>
+                <p>Por favor, seleccione:<br>
+                    1 en el tema del que hable más<br>
+                    7 en el tema del que hable menos<br>
+                    Utilice cada número solo una vez, sin repeticiones.
+                </p>
+
+                <div class="subquestion">
+                    <label>Política y actualidad:</label>
+                    <select id="q35_1" name="q35_1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Aficiones e intereses (deportes, música, cine, etc.):</label>
+                    <select id="q35_2" name="q35_2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Asuntos personales (decisiones vitales, sentimientos, etc.):</label>
+                    <select id="q35_3" name="q35_3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Trabajo:</label>
+                    <select id="q35_4" name="q35_4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Familia y amigos:</label>
+                    <select id="q35_5" name="q35_5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>El tiempo:</label>
+                    <select id="q35_6" name="q35_6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+
+                <div class="subquestion">
+                    <label>Lo que ha hecho últimamente:</label>
+                    <select id="q35_7" name="q35_7">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            
+
+
+
+
+            
+
+            
+            
+
+            <div class="submit-button">
+                <button type="button" onclick="calculateScore()">Enviar</button>
+            </div>
+        </form>
+
+        <div id="result" class="result">
+            <!-- The result will appear here -->
+        </div>
+    </div>
+
+    <script src="script_amistad.js"></script>
+</body>
+</html>
+
