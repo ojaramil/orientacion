@@ -9,9 +9,22 @@ body {
     overflow: hidden; /* Prevent page scrolling */
 }
 
-.container-wrapper {
-    position: fixed
 
+.container-wrapper {
+    position: fixed; /* Fixed positioning so it doesn't move */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure perfect centering */
+    width: 90%; /* Default width */
+    max-width: 800px; /* Maximum width for larger screens */
+    padding: 20px 30px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Softer shadow for an elegant look */
+    color: #000000; /* Dark text inside the form */
+    overflow-y: auto; /* Enable internal scrolling for form overflow */
+    max-height: 90vh; /* Ensure container doesn't exceed 90% of the viewport height */
+}
 
     
 h1 {
